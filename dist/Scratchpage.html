@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peyton's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4F8A8B; 
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .content {
+            margin: 20px;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .video {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+        ul {
+            list-style-type: square;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        .styled-list {
+            margin-left: 20px;
+        }
+        .anchor {
+            margin-top: 50px;
+            padding-top: 50px;
+            border-top: 2px solid #ddd;
+        }
+        footer {
+            background-color: #4F8A8B; 
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+
+        
+        .tableauPlaceholder {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 60%;
+        }
+
+        .tableauViz {
+            display: block;
+            margin: 0 auto;
+            width: 60%; 
+            height: 400px; 
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Peyton's Scratch Golf Page (Get it?)
+            
+       
+    
+        <!-- Navigation for links to other pages -->
+        <nav class="nav-links"> 
+            <a href="index.html">Professional Pages</a> 
+        </nav>
+    </header>
+
+    <div class="content">
+        <section id="about">
+        </h1>
+        <nav class="nav-anchors">
+            <a href="#about">About</a> | 
+            <a href="#gallery">Gallery</a> | 
+            <a href="#tableau">Interactive Graph</a>
+        </nav>
+            <h2>Golf Website</h2>
+       
+            <p>I love to play golf. It is a fun way to get outside with friends and enjoy some fresh air and sunshine.</p>
+            <div class="styled-list">
+                <p>Things that helped me learn how to golf:</p>
+                <ol>
+                    <li>Have the right gear
+                        <ul>
+                            <li>Invest in quality clubs that suit your style</li>
+                            <li>Wear comfortable and appropriate golf shoes</li>
+                        </ul>
+                    </li>
+                    <li>Play with experienced golfers
+                        <ul>
+                            <li>Learn strategies and techniques from seasoned players</li>
+                            <li>Observe and adapt their approaches to different challenges</li>
+                        </ul>
+                    </li>
+                    <li>Practice regularly
+                        <ul>
+                            <li>Work on your swing at the driving range</li>
+                            <li>Practice putting and chipping around the green</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="image-container">
+                <img src="images/millsite.jpeg" alt="Golf Course" style="max-width:100%;">
+                <p>The boys</p>
+            </div>
+        </section>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fG3J0F0dbrc?si=ytqTRoarOqkIyhmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <section id="tableau">
+            <h2>Interactive Graph</h2>
+            <div class='tableauPlaceholder' id='viz1734458452618' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Worldwide Language Devi Arnita (2)' 
+                            src='https://public.tableau.com/static/images/Wo/WorldwideLanguageDevitwbxPublicversion2/WorldwideLanguageDeviArnita2/1_rss.png' 
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='WorldwideLanguageDevitwbxPublicversion2/WorldwideLanguageDeviArnita2' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/Wo/WorldwideLanguageDevitwbxPublicversion2/WorldwideLanguageDeviArnita2/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+        </section>
+
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1734458452618');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+        
+            // made graph smaller
+            if (divElement.offsetWidth > 800) { 
+                vizElement.style.width = '1500px';
+                vizElement.style.height = '1000px';
+            } else if (divElement.offsetWidth > 500) { 
+                vizElement.style.width = '1200px';
+                vizElement.style.height = '500px';
+            } else { 
+                vizElement.style.width = '100%';
+                vizElement.style.height = '400px';
+            }
+        
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+    <footer>
+        <a href="#about">Top of Page</a> | 
+        <a href="index.html">Professional Pages</a>
+    </footer>
+</body>
+</html>
